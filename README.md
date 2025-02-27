@@ -1,2 +1,2 @@
 # Leetcode
-Yes, I know, some of the solutions are literal shit
+Yes, I know, some of this solutions are literal shit
