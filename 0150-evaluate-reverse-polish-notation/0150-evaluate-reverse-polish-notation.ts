@@ -8,22 +8,24 @@ function evalRPN(tokens: string[]): number {
         }else{
             let second = Number(stack.pop())
             let first = Number(stack.pop())
-            let value 
-            if(token == "-"){
-                value = first - second
-            }else if(token == "+"){
-                value = first + second
-            }else if(token == "*"){
-                value = first * second
-            }else if(token == "/"){
+            if(token == "/"){
                 let result = first / second
                 if(result > 0){
-                    value = Math.floor(result)
+                    stack.push(Math.floor(result))
                 }else{
-                    value = Math.ceil(result)
+                    stack.push(Math.ceil(result))
                 }
+            }else{
+                let value 
+                if(token == "-"){
+                    value = first - second
+                }else if(token == "+"){
+                    value = first + second
+                }else if(token == "*"){
+                    value = first * second
+                }
+                stack.push(value)
             }
-            stack.push(value)
         }
     }
     return stack[0]
