@@ -11,31 +11,16 @@
  */
 class Solution {
 public:
-    bool compareTrees(TreeNode* root1, TreeNode* root2){
-        if(!root1 && !root2)
-            return true;
-        if((root1 && !root2) || (!root1 && root2) || root1->val != root2->val){
-            return false;
-        }
-        return compareTrees(root1->left, root2->left) && compareTrees(root1->right, root2->right);
+    bool isSame(TreeNode* a, TreeNode* b){
+        if(!a && !b) return true;
+        if(a && !b || !a && b) return false;
+        if(a->val != b->val) return false;
+        return isSame(a->left, b->left) && isSame(a->right, b->right);
     }
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-        queue<TreeNode*>q;
-        q.push(root);
-        while(!q.empty()){
-            TreeNode* c = q.front();
-            q.pop();
-            if(!c){
-                continue;
-            }
-            if(c->val == subRoot->val){
-                if(compareTrees(c, subRoot)){
-                    return true;
-                }
-            }
-            q.push(c->left);
-            q.push(c->right);
-        }        
-        return false;
+       if(!root) return false;
+       if(isSame(root, subRoot)) return true; 
+       if(isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot)) return true;
+       return false;
     }
 };
