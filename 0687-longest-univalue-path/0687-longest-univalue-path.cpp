@@ -11,30 +11,17 @@
  */
 class Solution {
 public:
-
-    pair<int, int> dfs(TreeNode* root, int& answ) {
-        if (!root) return make_pair(-1, 0);
-        pair<int, int> l = dfs(root->left, answ);
-        pair<int, int> r = dfs(root->right, answ);
-    
-        int currStreak = 0;
-        if (l.first == root->val) {
-            currStreak += l.second;
-        }
-        if (r.first == root->val) {
-            currStreak += r.second;
-        }
-        answ = max(answ, currStreak);
-        if (currStreak == 0) {
-            return make_pair(root->val, 1);
-        }
-        else {
-            return make_pair(root->val, max(r.second, l.second) + 1);
-        }
+    int dfs(TreeNode* root, int& res, TreeNode* prev){
+        if(!root) return 0;
+        int left = dfs(root->left, res, root);  
+        int right = dfs(root->right, res, root);  
+        res = max(res, left+right);
+        if(!prev) return 0;
+        return root->val == prev->val ? 1 + max(left, right) : 0;
     }
     int longestUnivaluePath(TreeNode* root) {
-       	int answ = 0;
-        dfs(root, answ);
-        return answ;
+        int res = 0;
+        dfs(root, res, nullptr);        
+        return res;
     }
 };
