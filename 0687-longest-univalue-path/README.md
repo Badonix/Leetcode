@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/longest-univalue-path">687. Longest Univalue Path</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the length of the longest path, where each node in the path has the same value</em>. This path may or may not pass through the root.</p>
+<h2><a href="https://leetcode.com/problems/longest-univalue-path/">687. Longest Univalue Path</a></h2><h3>Medium</h3><hr><p>Given the <code>root</code> of a binary tree, return <em>the length of the longest path, where each node in the path has the same value</em>. This path may or may not pass through the root.</p>
 
 <p><strong>The length of the path</strong> between two nodes is represented by the number of edges between them.</p>
 
