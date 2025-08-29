@@ -6,10 +6,10 @@ public:
             return true;
         }
         for(int i = 1; i <= nums[index]; i++){
+            v[index+i-1] = true;
             if(canWin(nums, index + i, v)){
                 return true;
             }
-            v[index+i-1] = true;
         }
         return false;
     }
