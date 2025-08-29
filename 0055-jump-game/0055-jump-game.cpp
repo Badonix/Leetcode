@@ -2,14 +2,14 @@ class Solution {
 public:
     bool canWin(vector<int>& nums, int index, vector<bool>& v){
         if(v[index]) return false;
-        if(index + nums[index] >= nums.size()){
+        if(index + nums[index] + 1 >= nums.size()){
             return true;
         }
         for(int i = 1; i <= nums[index]; i++){
-            v[index+i-1] = true;
             if(canWin(nums, index + i, v)){
                 return true;
             }
+            v[index+i-1] = true;
         }
         return false;
     }
