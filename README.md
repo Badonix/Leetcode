@@ -20,4 +20,5 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | [0511-game-play-analysis-i](https://github.com/Badonix/Leetcode/tree/main/0511-game-play-analysis-i/) | Easy |
 | [0577-employee-bonus](https://github.com/Badonix/Leetcode/tree/main/0577-employee-bonus/) | Easy |
 | [0584-find-customer-referee](https://github.com/Badonix/Leetcode/tree/main/0584-find-customer-referee/) | Easy |
+| [0586-customer-placing-the-largest-number-of-orders](https://github.com/Badonix/Leetcode/tree/main/0586-customer-placing-the-largest-number-of-orders/) | Easy |
 <!---LeetCode Topics End-->
