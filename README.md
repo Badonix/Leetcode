@@ -29,4 +29,20 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | [0620-not-boring-movies](https://github.com/Badonix/Leetcode/tree/main/0620-not-boring-movies/) | Easy |
 | [1050-actors-and-directors-who-cooperated-at-least-three-times](https://github.com/Badonix/Leetcode/tree/main/1050-actors-and-directors-who-cooperated-at-least-three-times/) | Easy |
 | [1068-product-sales-analysis-i](https://github.com/Badonix/Leetcode/tree/main/1068-product-sales-analysis-i/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
 <!---LeetCode Topics End-->
