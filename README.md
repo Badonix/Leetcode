@@ -32,6 +32,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0542-01-matrix](https://github.com/Badonix/Leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -41,14 +42,20 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0542-01-matrix](https://github.com/Badonix/Leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0841-keys-and-rooms](https://github.com/Badonix/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
 | [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0542-01-matrix](https://github.com/Badonix/Leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0841-keys-and-rooms](https://github.com/Badonix/Leetcode/tree/main/0841-keys-and-rooms/) | Medium |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0542-01-matrix](https://github.com/Badonix/Leetcode/tree/main/0542-01-matrix/) | Medium |
 <!---LeetCode Topics End-->
