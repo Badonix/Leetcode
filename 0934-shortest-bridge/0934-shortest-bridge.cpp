@@ -1,114 +1,64 @@
 class Solution {
 public:
     int shortestBridge(vector<vector<int>>& grid) {
+        queue<pair<int, int>> q;
         for (int i = 0; i < grid.size(); i++) {
             for (int j = 0; j < grid[0].size(); j++) {
                 if (grid[i][j] == 1) {
-                    set<pair<int, int>> edges = populateIsland(grid, i, j);
-                    return findBridge(grid, edges);
+                    markIsland(i, j, grid, q);
+                    return find_shortest(i, j, grid, q);
                 }
             }
         }
-        return -9;
+        return 0;
     }
 
-    int findBridge(vector<vector<int>>& grid, set<pair<int, int>> edges){
-        vector<pair<int, int>> directions = {
-            {1, 0},
-            {-1, 0},
-            {0, 1},
-            {0, -1},
-        };
-        queue<pair<int, int>> q; 
-        for(pair<int, int> curr : edges){
-            q.push(curr);
-        }
-
-        int bridgeLength = 0;
-        int size = q.size();
-        while(!q.empty()){
-            bridgeLength++;
-            for(int i = 0; i < size; i++){
-                pair<int, int> curr = q.front();
+    int find_shortest(int i, int j, vector<vector<int>>& grid,
+                      queue<pair<int, int>>& q) {
+        int distance = 0;
+        while (!q.empty()) {
+            int n = q.size();
+            for (int i = 0; i < n; i++) {
+                pair<int, int> p = q.front();
                 q.pop();
-                for(auto [dr, dc] : directions){
-                    int newRow = curr.first + dr;
-                    int newCol = curr.second + dc;
-                    if(isInBounds(grid, make_pair(newRow, newCol)) && grid[newRow][newCol] != 2){
-                        if(grid[newRow][newCol] == 1){
-                            return bridgeLength - 1;
-                        }else if(grid[newRow][newCol] == 0){
-                            q.push(make_pair(newRow, newCol));
-                            grid[newRow][newCol] = 2;
+                if (grid[p.first][p.second] == 1)
+                    return distance;
+                for (int di = -1; di <= 1; di++) {
+                    for (int dj = -1; dj <= 1; dj++) {
+                        if (abs(di) == abs(dj))
+                            continue;
+                        if (inBounds(p.first + di, p.second + dj, grid)){
+                            if(grid[p.first+di][p.second+dj] == 1){
+                                return distance;
+                            }else if(grid[p.first+di][p.second+dj] == 0){
+                                q.push({p.first + di, p.second + dj});
+                                grid[p.first+di][p.second+dj] = 2;
+                            }
                         }
                     }
                 }
             }
-            size = q.size();
+            distance++;
         }
-        return -1;        
-    } 
-
-    bool isInBounds(vector<vector<int>>& grid, pair<int, int> coords) {
-        int row = coords.first;
-        int col = coords.second;
-        return row >= 0 && row < grid.size() && col < grid[0].size() &&
-               col >= 0;
+        return distance;
     }
 
-    bool isIslandEdge(vector<vector<int>>& grid, int row, int col) {
-        vector<pair<int, int>> directions = {
-            {1, 0},
-            {-1, 0},
-            {0, 1},
-            {0, -1},
-        };
-        for (auto [dr, dc] : directions) {
-            int newRow = row + dr;
-            int newCol = col + dc;
-            if (!isInBounds(grid, make_pair(newRow, newCol))) {
-                continue;
-            }
-            if (grid[newRow][newCol] == 0) {
-                return true;
+    void markIsland(int i, int j, vector<vector<int>>& grid,
+                    queue<pair<int, int>>& q) {
+        if (!inBounds(i, j, grid) || grid[i][j] != 1)
+            return;
+        grid[i][j] = 2;
+        q.push({i, j});
+        for (int di = -1; di <= 1; di++) {
+            for (int dj = -1; dj <= 1; dj++) {
+                if (abs(di) != abs(dj))
+                    markIsland(i + di, j + dj, grid, q);
             }
         }
-        return false;
     }
 
-    set<pair<int, int>> populateIsland(vector<vector<int>>& grid, int row,
-                                       int col) {
-        vector<pair<int, int>> directions = {
-            {1, 0},
-            {-1, 0},
-            {0, 1},
-            {0, -1},
-        };
-        queue<pair<int, int>> q;
-        set<pair<int, int>> edges;
-        pair<int, int> startPair = make_pair(row, col);
-        q.push(startPair);
-        grid[row][col] = 2;
-        if (isIslandEdge(grid, row, col)) {
-            edges.insert(startPair);
-        }
-        while (!q.empty()) {
-            pair<int, int> curr = q.front();
-            q.pop();
-
-            for (auto [dr, dc] : directions) {
-                int newRow = curr.first + dr;
-                int newCol = curr.second + dc;
-                pair<int, int> newEl = make_pair(newRow, newCol);
-                if (isInBounds(grid, newEl) && grid[newRow][newCol] == 1) {
-                    q.push(newEl);
-                    grid[newRow][newCol] = 2;
-                    if (isIslandEdge(grid, newRow, newCol)) {
-                        edges.insert(newEl);
-                    }
-                }
-            }
-        }
-        return edges;
+    bool inBounds(int new_i, int new_j, vector<vector<int>>& grid) {
+        return new_i >= 0 && new_j >= 0 && new_i < grid.size() &&
+               new_j < grid[0].size();
     }
 };
