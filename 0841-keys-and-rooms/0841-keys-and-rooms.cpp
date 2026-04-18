@@ -3,21 +3,24 @@ public:
     bool canVisitAllRooms(vector<vector<int>>& rooms) {
         queue<int> q;
         q.push(0);
-        set<int> not_visited;
+        vector<bool> visited(rooms.size(), true);
         for(int i = 1; i < rooms.size(); i++){
-            not_visited.insert(i);
+            visited[i] = false;
         }
 
         while(!q.empty()){
             int curr_room = q.front(); q.pop();
             for(int n : rooms[curr_room]){
-                if(not_visited.count(n) != 0){
+                if(!visited[n]){
                     q.push(n);
-                    not_visited.erase(n);
+                    visited[n] = true;
                 }
             }
         }
 
-        return not_visited.empty();
+        for(bool is_visited : visited){
+            if(!is_visited) return false;
+        }
+        return true;
     }
 };
