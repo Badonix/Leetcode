@@ -14,6 +14,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | ------- | ------- |
 | [0175-combine-two-tables](https://github.com/Badonix/Leetcode/tree/main/0175-combine-two-tables/) | Easy |
 | [0176-second-highest-salary](https://github.com/Badonix/Leetcode/tree/main/0176-second-highest-salary/) | Medium |
+| [0178-rank-scores](https://github.com/Badonix/Leetcode/tree/main/0178-rank-scores/) | Medium |
 | [0181-employees-earning-more-than-their-managers](https://github.com/Badonix/Leetcode/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0182-duplicate-emails](https://github.com/Badonix/Leetcode/tree/main/0182-duplicate-emails/) | Easy |
 | [0183-customers-who-never-order](https://github.com/Badonix/Leetcode/tree/main/0183-customers-who-never-order/) | Easy |
