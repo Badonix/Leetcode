@@ -35,6 +35,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | [0620-not-boring-movies](https://github.com/Badonix/Leetcode/tree/main/0620-not-boring-movies/) | Easy |
 | [1050-actors-and-directors-who-cooperated-at-least-three-times](https://github.com/Badonix/Leetcode/tree/main/1050-actors-and-directors-who-cooperated-at-least-three-times/) | Easy |
 | [1068-product-sales-analysis-i](https://github.com/Badonix/Leetcode/tree/main/1068-product-sales-analysis-i/) | Easy |
+| [1393-capital-gainloss](https://github.com/Badonix/Leetcode/tree/main/1393-capital-gainloss/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
