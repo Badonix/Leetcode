@@ -81,6 +81,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | [0021-merge-two-sorted-lists](https://github.com/Badonix/Leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Badonix/Leetcode/tree/main/0083-remove-duplicates-from-sorted-list/) | Easy |
 | [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
+| [0146-lru-cache](https://github.com/Badonix/Leetcode/tree/main/0146-lru-cache/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -89,4 +90,13 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
+| [0146-lru-cache](https://github.com/Badonix/Leetcode/tree/main/0146-lru-cache/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0146-lru-cache](https://github.com/Badonix/Leetcode/tree/main/0146-lru-cache/) | Medium |
+## Doubly-Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0146-lru-cache](https://github.com/Badonix/Leetcode/tree/main/0146-lru-cache/) | Medium |
 <!---LeetCode Topics End-->
