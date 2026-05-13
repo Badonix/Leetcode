@@ -22,7 +22,8 @@ public:
     
     void put(int key, int value) {
         if(m.count(key) != 0) {
-            get(key);
+            remove(m[key]);
+            add(m[key]);
             m[key]->val = value;
             return;
         }
@@ -55,7 +56,7 @@ struct Node{
         prev = NULL;
     };
 };
-map<int, Node*> m;
+unordered_map<int, Node*> m;
 int size, cap;
 Node* head;
 Node* tail;
