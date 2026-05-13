@@ -69,6 +69,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0392-is-subsequence](https://github.com/Badonix/Leetcode/tree/main/0392-is-subsequence/) | Easy |
 ## String
 | Problem Name | Difficulty |
@@ -78,8 +79,13 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Badonix/Leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
+| [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Badonix/Leetcode/tree/main/0021-merge-two-sorted-lists/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 <!---LeetCode Topics End-->
