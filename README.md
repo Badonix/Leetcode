@@ -72,10 +72,12 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0392-is-subsequence](https://github.com/Badonix/Leetcode/tree/main/0392-is-subsequence/) | Easy |
+| [0567-permutation-in-string](https://github.com/Badonix/Leetcode/tree/main/0567-permutation-in-string/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0392-is-subsequence](https://github.com/Badonix/Leetcode/tree/main/0392-is-subsequence/) | Easy |
+| [0567-permutation-in-string](https://github.com/Badonix/Leetcode/tree/main/0567-permutation-in-string/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -92,6 +94,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | ------- | ------- |
 | [0141-linked-list-cycle](https://github.com/Badonix/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0146-lru-cache](https://github.com/Badonix/Leetcode/tree/main/0146-lru-cache/) | Medium |
+| [0567-permutation-in-string](https://github.com/Badonix/Leetcode/tree/main/0567-permutation-in-string/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -108,4 +111,8 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/Badonix/Leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0567-permutation-in-string](https://github.com/Badonix/Leetcode/tree/main/0567-permutation-in-string/) | Medium |
 <!---LeetCode Topics End-->
