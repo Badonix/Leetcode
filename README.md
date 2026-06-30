@@ -39,6 +39,7 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/Badonix/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 | [0542-01-matrix](https://github.com/Badonix/Leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0934-shortest-bridge](https://github.com/Badonix/Leetcode/tree/main/0934-shortest-bridge/) | Medium |
 ## Depth-First Search
@@ -115,4 +116,12 @@ BTW here is my [profile](https://leetcode.com/u/badonix)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0567-permutation-in-string](https://github.com/Badonix/Leetcode/tree/main/0567-permutation-in-string/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0047-permutations-ii](https://github.com/Badonix/Leetcode/tree/main/0047-permutations-ii/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0047-permutations-ii](https://github.com/Badonix/Leetcode/tree/main/0047-permutations-ii/) | Medium |
 <!---LeetCode Topics End-->
