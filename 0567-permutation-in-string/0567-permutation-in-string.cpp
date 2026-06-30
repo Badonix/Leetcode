@@ -1,53 +1,28 @@
 class Solution {
 public:
     bool checkInclusion(string s1, string s2) {
-        map<char, int> m;
-        set<char> leftSet;
-        for (char c : s1) {
-            m[c]++;
-            leftSet.insert(c);
-        }
-
-        int left = 0;
-        int right = left + s1.size() - 1;
-        if (right >= s2.size()) {
-            return false;
-        }
-
-        for (int i = 0; i <= right; i++) {
-            m[s2[i]]--;
-            if (m[s2[i]] == 0) {
-                leftSet.erase(s2[i]);
-            } else if (m[s2[i]] == -1) {
-                leftSet.insert(s2[i]);
+        int size1 = s1.size(), size2 = s2.size();
+        if (size1 > size2) return false;      
+        vector<int> freq1(26, 0), freq2(26, 0);
+        for (int i = 0; i < size1; i++) {
+            freq1[s1[i] - 'a']++;
+            freq2[s2[i] - 'a']++;
+        }      
+        int index = size1;
+        while (true) {
+            int d = 0;
+            for (int i = 0; i < 26; i++) {
+                d += abs(freq1[i] - freq2[i]);
             }
+            if (d == 0) return true;      
+            int jump = d / 2;
+            if (index + jump > size2) return false;       
+            for (int i = 0; i < jump; i++) {
+                freq2[s2[index + i] - 'a']++;
+                freq2[s2[index + i - size1] - 'a']--;
+            }
+            index += jump;
         }
-
-        if (leftSet.empty()) {
-            return true;
-        }
-
-        while (right < s2.size() - 1) {
-            if (m[s2[left]] == 0) {
-                leftSet.insert(s2[left]);
-            }
-            m[s2[left]]++;
-            if (m[s2[left]] == 0) {
-                leftSet.erase(s2[left]);
-            }
-            left++;
-            right++;
-            m[s2[right]]--;
-            if (m[s2[right]] == 0) {
-                leftSet.erase(s2[right]);
-            } else if (m[s2[right]] == -1) {
-                leftSet.insert(s2[right]);
-            }
-            if (leftSet.empty()) {
-                return true;
-            }
-        }
-
         return false;
     }
 };
